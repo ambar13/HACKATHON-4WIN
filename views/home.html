@@ -12,7 +12,7 @@
     <title>Flashback</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav class="nav-extended">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Logo</a>
@@ -41,13 +41,24 @@
       <div id="test2" class="col s12">Test 2</div>
       <div id="test3" class="col s12">Test 3</div>
       <div id="test4" class="col s12">Test 4</div>
-    </header>
+    </header> -->
     <section class="home">
-
+      <div class="container">
+        <div class="row">
+          <h3 class="center-align">Search For Any Movie</h3>
+          <form id="searchForm">
+            <input type="text" id="searchText" placeholder="Search Movies...">
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div id="movies" class="row"></div>
+      </div>
     </section>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
     <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/home.js"></script>
   </body>
 </html>
