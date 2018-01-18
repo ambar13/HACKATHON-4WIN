@@ -25,6 +25,17 @@ El presente proyecto consiste en crear un producto digital con la temática de p
 * **Scketch:** Se desarrolló diversos tipos de diseño de las primeras vistas.
 ![sketch](assets/images/4win/scketch2.jpg)
 
+* **Presentacion:** 
+![sketch](assets/images/4win/img_1.png)
+
+* **Profile:** 
+![sketch](assets/images/4win/img_2.png)
+
+* **Noticias:** 
+![sketch](assets/images/4win/img_3.png)
+
+
+
 ## Flujo de la Aplicación
 ***
 
