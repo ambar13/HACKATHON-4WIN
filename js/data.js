@@ -11,7 +11,7 @@ var data = [
     'cadena original': 'ABC',
     'booleano': 'true',
     'sinapsis': 'Estuvo seis temporadas en antena, en la cadena estadounidense de televisión ABC, de 1988 a 1993. TV Guide nombró al programa como uno de los 20 mejores de la década de 1980. Después de sólo seis episodios emitidos, ganó un Emmy por mejor serie de comedia en 1988',
-    'imagen': 'https://images-na.ssl-images-amazon.com/images/I/91+X85ksGPL._RI_.jpg'
+    'imagen': 'https://img.peru21.pe/files/ec_article_multimedia_gallery/uploads/2017/08/09/598b92ae148ae.jpeg'
   },
   {
     'titulo': 'Alf',
@@ -95,7 +95,7 @@ var data = [
     'cadena original': 'NBC',
     'booleano': 'true',
     'sinapsis': 'La trama de las series y películas de Star Trek es bastante sobria en cuanto al futuro de la humanidad, consistente en cuanto a la calidad de la historia, coherente por la continuidad de la misma y congruente con la forma de ser de los humanos actuales (que intenta demostrar que el hombre no cambiará mucho en los próximos 400 años), siempre con la «continua misión de explorar extraños, nuevos mundos, y de buscar nuevas formas de vida y nuevas civilizaciones, viajando audazmente a donde nadie ha llegado antes».',
-    'imagen': 'http://www.startrekmovie.com/images/share.jpg'
+    'imagen': 'http://www.startrekdesktopwallpaper.com/new_wallpaper/Star_Trek_OriginalSerie_Crew2013_freecomputerdesktopwallpaper_1920.jpg'
   },
   {
     'titulo': 'Murder, She Wrote',
@@ -123,7 +123,7 @@ var data = [
     'cadena original': 'NBC',
     'booleano': 'true',
     'sinapsis': 'Miami Vice (en España: Corrupción en Miami; en Hispanoamérica: División Miami, Vicio en Miami o Miami, Policía Especial) es una serie de televisión estadounidense producida por Michael Mann para la NBC. La serie se caracterizó por su novedosa integración de música y efectos visuales para narrar la historia. Miami Vice estaba protagonizada por Don Johnson y Philip Michael Thomas, que interpretaban a dos detectives del Departamento de Policía del condado de Miami-Dade, que trabajaban encubiertos en Miami. ',
-    'imagen': 'https://3.bp.blogspot.com/-H8G1wfJjQ2E/WWfoanBwmGI/AAAAAAAACX4/yK6YSo4Y_r0hBwzz-Q4LVfjzkP_WNiMTgCLcBGAs/s1600/miami_vice.jpg'
+    'imagen': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9tY4UMJbd6V2IoBD_h92Ght-CUiQzKIaaqD_56Oug_oWycxw'
   },
   {
     'titulo': 'La pequeña maravilla',
