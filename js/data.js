@@ -48,8 +48,9 @@ var data = [{
   'inversion': '$6 000 000',
   'produccion': 'rso records',
   'booleano': 'true',
-  'sinapsis': '250 caracteres',
-  'idioma': ''
+  'sinapsis': 'sandy y danny han pasado un romántico verano juntos, pero, cuando las vacaciones se acaban, sus caminos se separan. vuelven a verse en el instituto rydell, pero danny ya no es el chico encantador y atento; ahora es engreído e insensible.',
+  'idioma': 'inglés',
+  'image': 'https://images-na.ssl-images-amazon.com/images/M/MV5BOTIyODkzOTE1NF5BMl5BanBnXkFtZTcwNTg2Njk0Mw@@._V1_SY1000_CR0,0,677,1000_AL_.jpg'
 },
 {
   'titulo': '',
