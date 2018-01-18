@@ -1,0 +1,16 @@
+.fond {
+  background-image: url('../assets/cc3.jpg');
+  height: 1000px;
+  background-size: cover;
+  padding-bottom: 20px;
+  position: relative;
+
+  
+}
+
+.fond row {
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+}
+

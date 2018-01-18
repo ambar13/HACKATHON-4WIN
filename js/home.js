@@ -1,3 +1,4 @@
+$('.button-collapse').sideNav();
 $(document).ready(() => {
   $('#searchForm').on('submit', function(event) {
     var searchText = $('#searchText').val();
