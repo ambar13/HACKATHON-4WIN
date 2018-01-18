@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('.modal').modal();
   // console.log('carga documento');
   // Declarando variables globales
   var arr;
@@ -36,16 +37,31 @@ $(document).ready(function() {
                 console.log(response);
                 var div = $('<div class="col s12 m4">');
                 var title = $('<h5 class="center-align">');
-                var img = $('<img class="responsive-img" src="' + response.Poster + '">');
+                var img = $('<img class="responsive-img info modal-trigger" data-target="modal1" data-name="' + response.Title + '" data-year="' + response.Year + '" data-time="' + response.Runtime + '" data-genero="' + response.Genre + '" data-actors="' + response.Actors + '" data-sinopsis="' + response.Plot + '" src="' + response.Poster + '">');
                 div.append(img);
                 title.append(response.Title);
                 div.append(title);
                 container.append(div);
+
+                $('.info').on('click', function() {
+                  var title = $(this).data('name');
+                  var year = $(this).data('year');
+                  var time = $(this).data('time');
+                  var genero = $(this).data('genero');
+                  var actors = $(this).data('actors');
+                  var sinopsis = $(this).data('sinopsis');
+                  $('#text').text(title + ' ' + year);
+                  $('#genre').text('Genero:' + genero);
+                  $('#time').text('Duración:' + time);
+                  $('#actors').text('Actores:' + actors);
+                  $('#raiting').text('Puntuación:' + raiting);
+                  $('#sinopsis').text('Sinopsis:' + sinopsis);
+                });
               }
             });
         }
       })
-      .catch((err) => {
+      .catch(function(err) {
         console.log(err);
       });
   }
