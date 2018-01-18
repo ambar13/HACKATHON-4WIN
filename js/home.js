@@ -1,78 +1,70 @@
+
 $('.button-collapse').sideNav();
-$(document).ready(() => {
+
+$(document).ready(function() {
+  $('.modal').modal();
+  // console.log('carga documento');
+  // Declarando variables globales
+  var arr;
+  var container = $('#movies');
+  // Evento
   $('#searchForm').on('submit', function(event) {
     var searchText = $('#searchText').val();
+    // console.log($('#searchText').val());
     getMovies(searchText);
     event.preventDefault();
   });
 
+  // Función para obtener datos segun la busqueda, pero excluyendo estrenos a partir del año 2000
   function getMovies(searchText) {
-    axios.get('http://www.omdbapi.com?s=' + searchText + '&apikey=fcd50d7e')
+    // console.log('empieza funcion');
+    axios.get('http://www.omdbapi.com/?s=' + searchText + '&apikey=fcd50d7e')
       .then(function(response) {
         console.log(response);
-        var movies = response.data.Search;
-        var output = '';
-        $.each(movies, function(index, movie) {
-          output += `
-            <div class="col m3">
-              <div class="well center-align">
-                <img src="${movie.Poster}">
-                <h5>${movie.Title}</h5>
-                <a onclick="movieSelected('${movie.imdbID}')" class="waves-effect waves-light btn" href="#">Detalles...</a>
-              </div>
-            </div>
-          `;
-        });
-        $('#movies').html(output);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }
+        $('#movies').empty(); // Eliminamos todos los nodos secundarios del DOM.
+        arr = [];
 
-  function movieSelected(id) {
-    sessionStorage.setItem('movieId', id);
-    window.location = 'movie.html';
-    return false;
-  }
+        // Recorremos el resultado de la busqueda y obtenemos en un array de imdbID
+        for (var i = 0; i < response.data.Search.length; i++) {
+          var movie = response.data.Search[i];
+          var movieId = movie.imdbID;
+          arr.push(movieId);
+        }
 
-  function getMovie() {
-    var movieId = sessionStorage.getItem('movieId');
-    axios.get('http://www.omdbapi.com?i=' + movieId + '&apikey=fcd50d7e')
-      .then(function(response) {
-        console.log(response);
-        var movie = response.data;
-        var output = `
-          <div class="row">
-            <div class="col m4">
-              <img src="${movie.Poster}" class="responsive-img">
-            </div>
-            <div class="col m8">
-              <h2>${movie.Title}</h2>
-              <ul class="list-group">
-                <li class="list-group-item"><strong>Genre:</strong> ${movie.Genre}</li>
-                <li class="list-group-item"><strong>Released:</strong> ${movie.Released}</li>
-                <li class="list-group-item"><strong>Rated:</strong> ${movie.Rated}</li>
-                <li class="list-group-item"><strong>IMDB Rating:</strong> ${movie.imdbRating}</li>
-                <li class="list-group-item"><strong>Director:</strong> ${movie.Director}</li>
-                <li class="list-group-item"><strong>Writer:</strong> ${movie.Writer}</li>
-                <li class="list-group-item"><strong>Actors:</strong> ${movie.Actors}</li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="well">
-              <h3>Plot</h3>
-              ${movie.Plot}
-              <hr>
-              <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="waves-effect waves-light btn">Ver IMDB</a>
-              <a href="home.html" class="waves-effect waves-light btn">Regresar al buscador</a>
-            </div>
-          </div>
-        `;
-        $('#movie').html(output);
+        console.log(arr);
+
+        for (var i = 0; i < arr.length; i++) {
+          $.getJSON('http://www.omdbapi.com/?&apikey=fcd50d7e&i=' + arr[i])
+            .then(function(response) {
+              if ((response.Year.indexOf('19') !== -1)) {
+                console.log(response);
+                var div = $('<div class="col s12 m4">');
+                var title = $('<h5 class="center-align">');
+                var img = $('<img class="responsive-img info modal-trigger" data-target="modal1" data-name="' + response.Title + '" data-year="' + response.Year + '" data-time="' + response.Runtime + '" data-genero="' + response.Genre + '" data-actors="' + response.Actors + '" data-sinopsis="' + response.Plot + '" src="' + response.Poster + '">');
+                div.append(img);
+                title.append(response.Title);
+                div.append(title);
+                container.append(div);
+
+                $('.info').on('click', function() {
+                  var title = $(this).data('name');
+                  var year = $(this).data('year');
+                  var time = $(this).data('time');
+                  var genero = $(this).data('genero');
+                  var actors = $(this).data('actors');
+                  var sinopsis = $(this).data('sinopsis');
+                  $('#text').text(title + ' ' + year);
+                  $('#genre').text('Genero:' + genero);
+                  $('#time').text('Duración:' + time);
+                  $('#actors').text('Actores:' + actors);
+                  $('#raiting').text('Puntuación:' + raiting);
+                  $('#sinopsis').text('Sinopsis:' + sinopsis);
+                });
+              }
+            });
+        }
       })
-      .catch((err) => {
+      .catch(function(err) {
         console.log(err);
       });
   }
