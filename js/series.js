@@ -18,6 +18,7 @@ $('.modal-box').on('click', function(event)
 
     if ($(this).data('titulo') === data[i].titulo) {
       $('.title').text(data[i].titulo + ' ' + data[i].año);
+      $('.video').attr('src', data[i].video);
       $('.genre').text(data[i].genero);
       $('.seasons').text(data[i].temporadas);
       $('.episodes').text(data[i].episodios);
