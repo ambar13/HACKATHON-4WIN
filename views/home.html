@@ -1,34 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Enlace Icono de Pestaña-->
-    <link rel="icon" href="">
-    <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
-    <!-- Enlace a hoja de estilo externa -->
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Flashback</title>
-  </head>
-  <body>
-    <section class="home">
-      <div class="container">
-        <div class="row">
-          <h3 class="center-align">Search For Any Movie</h3>
-          <form id="searchForm">
-            <input type="text" id="searchText" placeholder="Search Movies...">
-          </form>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Enlace Icono de Pestaña-->
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <!-- Enlace a hoja de estilo externa -->
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Flashback</title>
+</head>
+
+<body>
+
+
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Logo</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+          <li>
+            <a href="sass.html">Inicio</a>
+          </li>
+          <li>
+            <a href="badges.html">Noticia</a>
+          </li>
+          <li>
+            <a href="collapsible.html">registrarse</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="col s12 m12 l12 box-slider">
+      <div id="contenedor-slider" class="contenedor-slider">
+        <div id="slider" class="slider">
+          <section class="slider__section">
+            <img src="../assets/images/elpadrino1.jpg" class="slider__img responsive-img">
+          </section>
+          <section class="slider__section">
+            <img src="../assets/images/casablanca1.jpg" class="slider__img responsive-img">
+          </section>
+          <section class="slider__section">
+            <img src="../assets/images/bitelchus1.jpg" class="slider__img responsive-img">
+          </section>
+          <section class="slider__section">
+            <img src="../assets/images/dirtydance1.jpg" class="slider__img responsive-img">
+          </section>
+        </div>
+        <div id="btn-prev" class="btn-prev">&#60;</div>
+        <div id="btn-next" class="btn-next">&#62;</div>
+      </div>
+    </div>
+  </main>
+
+  <br>
+  <li class="divider"></li>
+  <br>
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="">
+
+        <div class="col m12">
+          <div class="btn-cards">
+            <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown1'>Las Tops del mes!</a>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li>
+                <a href="#!">Romanticas</a>
+              </li>
+              <li>
+                <a href="#!">Accion</a>
+              </li>
+              <li>
+                <a href="#!">Terror</a>
+              </li>
+            </ul>
+          </div>
+          <br>
+
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/elpadrino.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/depredador.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/cazafantasmas.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/dirtydance.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="container">
-        <div id="movies" class="row"></div>
+    </div>
+  </section>
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="">
+
+        <div class="col m12">
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/et.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/flashdance.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/goonies.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/grease.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-    <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../js/home.js"></script>
-  </body>
+    </div>
+  </section>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="">
+
+        <div class="col m12">
+          <div class="btn-cards">
+            <p class="marathon">Tus marathones!</p>
+          </div>
+          <br>
+
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/indiana.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>Fecha: Lunes 20/02/2018</p>
+                    <p>Duración: 10 horas</p>
+                    <p>Hora: 16:00</p>
+                    <p>Nota: Trasnmision del conversatorio vivo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/karatekid.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>Fecha: Lunes 02/03/2018</p>
+                    <p>Duración: 8 horas</p>
+                    <p>Hora: 15:00</p>
+                    <p>Nota: Trasnmision del conversatorio vivo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/locademia.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>Fecha: Lunes 17/02/2018</p>
+                    <p>Duración: 6 horas</p>
+                    <p>Hora: 13:00</p>
+                    <p>Nota: Trasnmision del conversatorio vivo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-movie">
+            <div class="">
+              <div class="col s12 m3 l3">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="../assets/images/rockyiv.jpg">
+                  </div>
+                  <div class="card-content">
+                    <p>Fecha: Lunes 29/01/2018</p>
+                    <p>Duración: 8 horas</p>
+                    <p>Hora: 15:00</p>
+                    <p>Nota: Trasnmision del conversatorio vivo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- area de prueba de nelida -->
+  <section class="home">
+    <div class="container">
+      <div class="row">
+        <h3 class="center-align">Search For Any Movie</h3>
+        <form id="searchForm">
+          <input type="text" id="searchText" placeholder="Search Movies...">
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div id="movies" class="row"></div>
+    </div>
+  </section>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/home.js"></script>
+  <script type="text/javascript" src="../js/slider.js"></script>
+
+</body>
+
 </html>
