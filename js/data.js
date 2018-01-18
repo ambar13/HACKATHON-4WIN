@@ -8,7 +8,7 @@ var data = [
     'escritor': 'Neal Marlens & Carol Black',
     'temporadas': '6',
     'episodios': '115',
-    'cadena original': 'ABC',
+    'cadenaoriginal': 'ABC',
     'booleano': 'true',
     'sinapsis': 'Estuvo seis temporadas en antena, en la cadena estadounidense de televisión ABC, de 1988 a 1993. TV Guide nombró al programa como uno de los 20 mejores de la década de 1980. Después de sólo seis episodios emitidos, ganó un Emmy por mejor serie de comedia en 1988',
     'imagen': 'https://img.peru21.pe/files/ec_article_multimedia_gallery/uploads/2017/08/09/598b92ae148ae.jpeg'
@@ -19,10 +19,10 @@ var data = [
     'duracion': '30 min',
     'genero': 'Comedia, ciencia ficcion',
     'director': 'Bernie Brillstein, Tom Patchell',
-    'escritor': 'tom Patchell, Paul Fusco',
+    'escritor': 'Tom Patchell, Paul Fusco',
     'temporadas': '4',
     'episodios': '102',
-    'cadena original': 'NBC',
+    'cadenaoriginal': 'NBC',
     'booleano': 'true',
     'sinapsis': ' ALF es una serie de televisión estadounidense, que se emitió originalmente por la NBC entre el 22 de septiembre de 1986 y 24 de marzo de 1990. La serie constó de 102 episodios, tras los cuales se presentó una película, llamada Proyecto: ALF, que contaba el desenlace de la historia. ',
     'imagen': 'http://images.mentalfloss.com/sites/default/files/styles/mf_image_3x2/public/alf-header.jpg?itok=e0I9JTFd&resize=1100x740'
@@ -36,7 +36,7 @@ var data = [
     'escritor': 'Glen A. Larson',
     'temporadas': '4',
     'episodios': '90',
-    'cadena original': 'NBC',
+    'cadenaoriginal': 'NBC',
     'booleano': 'true',
     'sinapsis': 'Knight Rider (conocida como El coche fantástico en España, El auto increíble en México y El auto fantástico en el resto de Hispanoamérica) fue una serie de televisión estadounidense de los años 1980. El personaje protagonista de la serie, Michael Knight (interpretado por el actor David Hasselhoff), es un defensor de los pobres y desamparados, cuyo nombre real es Michael Long, que combate la injusticia conduciendo un prototipo de automóvil de alta tecnología.',
     'imagen': 'https://images-na.ssl-images-amazon.com/images/I/91+X85ksGPL._RI_.jpg'
@@ -50,7 +50,7 @@ var data = [
     'escritor': 'Marcy Carsey, Tom Werner',
     'temporadas': '8',
     'episodios': '197',
-    'cadena original': 'NBC',
+    'cadenaoriginal': 'NBC',
     'booleano': 'true',
     'sinapsis': 'The Cosby Show (La hora de Bill Cosby en España) es una serie de televisión norteamericana protagonizada por Bill Cosby. Se estrenó en Estados Unidos en 1984 en el canal NBC. Narra la vida de los Huxtable, una familia afroamericana de clase media-alta que vive en el barrio de Brooklyn de Nueva York.',
     'imagen': 'https://www.bet.com/celebrities/news/2016/11/14/cosby-show/_jcr_content/image.custom0x0.dimg/__1479154213425__1479152381607/111416-celebs-cosby-show.jpg'
@@ -64,7 +64,7 @@ var data = [
     'escritor': '	Stephen J. Cannell y Frank Lupo',
     'temporadas': '5',
     'episodios': '98',
-    'cadena original': 'NBC',
+    'cadenaoriginal': 'NBC',
     'booleano': 'true',
     'sinapsis': '(El equipo A en España y Los magníficos o Brigada A en Hispanoamérica) es una serie de televisión estadounidense, protagonizada por George Peppard, Dwight Schultz, Dirk Benedict y Mr. T, que fue emitida originalmente por la cadena NBC, desde el 23 de enero de 1983 hasta el 8 de marzo de 1987.',
     'imagen': 'https://i.ytimg.com/vi/y1MbnLiUW9o/maxresdefault.jpg'
@@ -78,7 +78,7 @@ var data = [
     'escritor': 'Jeff Franklin',
     'temporadas': '8',
     'episodios': '192',
-    'cadena original': 'ABC',
+    'cadenaoriginal': 'ABC',
     'booleano': 'true',
     'sinapsis': 'Full House (Padres forzosos en España y Tres por tres en Latinoamérica) es una serie de televisión estadounidense creada por Jeff Franklin para la cadena televisiva ABC. Ambientada en San Francisco, California, muestra las crónicas de un padre viudo; "Danny Tanner", quien, después de la muerte de su esposa "Pam", reúne a su mejor amigo "Joey Gladstone" y su cuñado "Jesse Katsopolis" para ayudar a criar a sus 3 hijas: "D.J.", "Stephanie", y "Michelle". ',
     'imagen': 'https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/09/22/59c5638356db3.jpeg'
@@ -92,7 +92,7 @@ var data = [
     'escritor': 'Gene Roddenberry',
     'temporadas': '30',
     'episodios': '733',
-    'cadena original': 'NBC',
+    'cadenaoriginal': 'NBC',
     'booleano': 'true',
     'sinapsis': 'La trama de las series y películas de Star Trek es bastante sobria en cuanto al futuro de la humanidad, consistente en cuanto a la calidad de la historia, coherente por la continuidad de la misma y congruente con la forma de ser de los humanos actuales (que intenta demostrar que el hombre no cambiará mucho en los próximos 400 años), siempre con la «continua misión de explorar extraños, nuevos mundos, y de buscar nuevas formas de vida y nuevas civilizaciones, viajando audazmente a donde nadie ha llegado antes».',
     'imagen': 'http://www.startrekdesktopwallpaper.com/new_wallpaper/Star_Trek_OriginalSerie_Crew2013_freecomputerdesktopwallpaper_1920.jpg'
@@ -106,7 +106,7 @@ var data = [
     'escritor': 'Peter S. Fisher',
     'temporadas': '12',
     'episodios': '264',
-    'cadena original': 'CBS',
+    'cadenaoriginal': 'CBS',
     'booleano': 'true',
     'sinapsis': 'La protagonista es Jessica Beatrice Fletcher (interpretada por Angela Lansbury), una profesora de inglés que, tras jubilarse y ante el fallecimiento de su esposo, se lanza a la aventura de ser escritora de novelas de misterio, alcanzado el éxito como J. B. Fletcher.',
     'imagen': 'https://img.buzzfeed.com/buzzfeed-static/static/2015-07/17/21/campaign_images/webdr14/how-would-you-die-on-murder-she-wrote-2-6305-1437181784-1_dblbig.jpg'
@@ -120,7 +120,7 @@ var data = [
     'escritor': 'Anthony Yerkovich',
     'temporadas': '5',
     'episodios': '11',
-    'cadena original': 'NBC',
+    'cadenaoriginal': 'NBC',
     'booleano': 'true',
     'sinapsis': 'Miami Vice (en España: Corrupción en Miami; en Hispanoamérica: División Miami, Vicio en Miami o Miami, Policía Especial) es una serie de televisión estadounidense producida por Michael Mann para la NBC. La serie se caracterizó por su novedosa integración de música y efectos visuales para narrar la historia. Miami Vice estaba protagonizada por Don Johnson y Philip Michael Thomas, que interpretaban a dos detectives del Departamento de Policía del condado de Miami-Dade, que trabajaban encubiertos en Miami. ',
     'imagen': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP9tY4UMJbd6V2IoBD_h92Ght-CUiQzKIaaqD_56Oug_oWycxw'
@@ -134,7 +134,7 @@ var data = [
     'escritor': 'Howard Leeds',
     'temporadas': '4',
     'episodios': '96',
-    'cadena original': 'Redifusion',
+    'cadenaoriginal': 'Redifusion',
     'booleano': 'true',
     'sinapsis': 'La historia gira en torno a V.I.C.I. (Voice Input Child Identicant) interpretado por Tiffany Brissette, un androide con forma de niña de 10 años creado como un proyecto personal y en absoluto secreto por Ted Lawson (Dick Christie), quien trabaja para la empresa cibernética United Robotronics.',
     'imagen':
@@ -149,7 +149,7 @@ var data = [
     'escritor': 'Sol Saks',
     'temporadas': '8',
     'episodios': '254',
-    'cadena original': 'ABC',
+    'cadenaoriginal': 'ABC',
     'booleano': 'true',
     'sinapsis': 'Darrin Stephens es un joven publicista que se enamora de Samantha, una bella y dulce joven. Samantha y Darrin se casan, pero durante su luna de miel ella le confiesa que es una bruja, y desde ese momento pasan extrañas y divertidas situaciones a causa de sus poderes.',
     'imagen': 'https://www.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2014/11/bewitched-e1398581750118.png?itok=F8DrgzNO'
