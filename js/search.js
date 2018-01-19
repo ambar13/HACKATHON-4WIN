@@ -18,7 +18,7 @@ $(document).ready(function() {
   // Función para obtener datos segun la busqueda, pero excluyendo estrenos a partir del año 2000
   function getMovies(searchText) {
     // console.log('empieza funcion');
-    var url = 'http://www.omdbapi.com/?s=' + searchText + '&apikey=fcd50d7e';
+    var url = 'https://www.omdbapi.com/?s=' + searchText + '&apikey=fcd50d7e';
     $.ajax({
       url: url,
       success: function(response) {
@@ -36,7 +36,7 @@ $(document).ready(function() {
         console.log(arr);
 
         for (var i = 0; i < arr.length; i++) {
-          $.getJSON('http://www.omdbapi.com/?&apikey=fcd50d7e&i=' + arr[i])
+          $.getJSON('https://www.omdbapi.com/?&apikey=fcd50d7e&i=' + arr[i])
             .then(function(response) {
               if ((response.Year.indexOf('19') !== -1)) {
                 console.log(response);
