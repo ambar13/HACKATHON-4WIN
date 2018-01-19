@@ -18,15 +18,17 @@ $(document).ready(function() {
   // Función para obtener datos segun la busqueda, pero excluyendo estrenos a partir del año 2000
   function getMovies(searchText) {
     // console.log('empieza funcion');
-    axios.get('http://www.omdbapi.com/?s=' + searchText + '&apikey=fcd50d7e')
-      .then(function(response) {
+    var url = 'http://www.omdbapi.com/?s=' + searchText + '&apikey=fcd50d7e';
+    $.ajax({
+      url: url,
+      success: function(response) {
         console.log(response);
         $('#movies').empty(); // Eliminamos todos los nodos secundarios del DOM.
         arr = [];
 
         // Recorremos el resultado de la busqueda y obtenemos en un array de imdbID
-        for (var i = 0; i < response.data.Search.length; i++) {
-          var movie = response.data.Search[i];
+        for (var i in response.Search) {
+          var movie = response.Search[i];
           var movieId = movie.imdbID;
           arr.push(movieId);
         }
@@ -62,9 +64,10 @@ $(document).ready(function() {
               }
             });
         }
-      })
-      .catch(function(err) {
+      },
+      error: function(err) {
         console.log(err);
-      });
+      }
+    });
   }
 });
