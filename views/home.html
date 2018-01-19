@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Enlace Icono de Pestaña-->
+  <link rel="icon" href="">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-  <!-- Enlace a hoja de estilo externa -->
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
   <title>Flashback</title>
 </head>
-
 <body>
-
-
   <header>
-    <nav>
-      <div class="nav-wrapper red lighten-3">
-        <a href="home.html" class="brand-logo rigth"><img class="responsive-img" src="textt.png" height="50px" width="120px"></a>
+    <nav style="background-color:#82B0B0;">
+      <div class="nav-wrapper box-nav">
         <ul id="slide-out" class="side-nav">
           <li><a href="home.html">Inicio</a></li>
           <li><a href="noticias.html">Noticias</a></li>
@@ -31,182 +26,76 @@
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="home.html">Inicio</a></li>
-          <li class="active"><a href="noticias.html">Noticia</a></li>
-          <li><a href="badges.html">Categorias</a></li>
-          <li><a href="badges.html">Recomendadas</a></li>
-          <li><a href="buscar.html"><i class="material-icons">search</i></a></li>
-          <li><a>Inicia Sesion</a></li>
+          <li><a href="home.html"><h4>Home</h4></a></li>
+          <li><a href="series.html"><h4>Series</h4></a></li>
+          <li><a href="trivias.html"><h4>Trivias</h4></a></li>
+          <li class="logo-box"><img src="../assets/images/logo.png" class="responsive-img logo" alt="logo"></li>
+          <li><a href="#modal3" class="modal-trigger"><h4>Login</h4></a></li>
+          <li><a href="#modal2" class="modal-trigger"><h4>Register</h4></a></li>
+          <li><a href="search.html"><div class="box-search"><i class="material-icons">search</i>
+          </div></a></li>
         </ul>
       </div>
     </nav>
   </header>
-
-  <main>
+  <section class="container-slider"><!-- Inicio de Slider -->
     <div class="col s12 m12 l12 box-slider">
       <div id="contenedor-slider" class="contenedor-slider">
-        <div id="slider" class="slider">
+        <div id="slider" class="slider-content">
           <section class="slider__section">
-            <img src="../assets/images/elpadrino1.jpg" class="slider__img responsive-img">
+            <img src="../assets/images/starwars.jpg" class="slider__img responsive-img">
           </section>
           <section class="slider__section">
-            <img src="../assets/images/casablanca1.jpg" class="slider__img responsive-img">
+            <img src="../assets/images/casablanca.jpg" class="slider__img responsive-img">
           </section>
           <section class="slider__section">
-            <img src="../assets/images/bitelchus1.jpg" class="slider__img responsive-img">
+            <img src="../assets/images/depredador.jpg" class="slider__img responsive-img">
           </section>
           <section class="slider__section">
-            <img src="../assets/images/dirtydance1.jpg" class="slider__img responsive-img">
+            <img src="../assets/images/dirty.jpg" class="slider__img responsive-img">
           </section>
         </div>
         <div id="btn-prev" class="btn-prev">&#60;</div>
         <div id="btn-next" class="btn-next">&#62;</div>
       </div>
     </div>
-  </main>
-
-  <br>
-  <li class="divider"></li>
-  <br>
-
+  </section><!-- Fin de Slider -->
+  <hr class="line">
+  <section class="container">
+    <div class="row">
+      <div class="title-top">
+        <h3 class="center-align"><span>Tops del mes</span></h3>
+      </div>
+      <figure class="col s12 m4 snip1113">
+        <img src="../assets/images/grease.jpg" class="responsive-img"/>
+        <figcaption>
+          <h3><span>Grease</span></h3>
+          <h4>1990</h4>
+        </figcaption>
+      </figure>
+      <figure class="snip1113 hover col s12 m4">
+        <img src="../assets/images/karatekid.jpg" class="responsive-img"/>
+        <figcaption>
+          <h3><span>Karate Kid</span></h3>
+          <h4>1998</h4>
+        </figcaption>
+      </figure>
+      <figure class="snip1113 col s12 m4">
+        <img src="../assets/images/locademia.jpg" class="responsive-img"/>
+        <figcaption>
+          <h3><span>Locademia</span></h3>
+          <h4>1999</h4>
+        </figcaption>
+      </figure>
+    </div>
   <section class="container-fluid">
     <div class="row">
       <div class="">
-
         <div class="col m12">
-          <div class="btn-cards">
-            <a class='dropdown-button btn' data-beloworigin="true" href='#' data-activates='dropdown1'>Las Tops del mes!</a>
-            <!-- Dropdown Structure -->
-            <ul id='dropdown1' class='dropdown-content'>
-              <li>
-                <a href="#!">Romanticas</a>
-              </li>
-              <li>
-                <a href="#!">Accion</a>
-              </li>
-              <li>
-                <a href="#!">Terror</a>
-              </li>
-            </ul>
+          <div class="title-top">
+            <h3 class="center-align"><span>Maratones de la semana</span></h3>
           </div>
           <br>
-
-          <div class="cards-movie">
-            <div class="">
-              <div class="col s12 m3 l3">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="../assets/images/elpadrino.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cards-movie">
-            <div class="">
-              <div class="col s12 m3 l3">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="../assets/images/depredador.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cards-movie">
-            <div class="">
-              <div class="col s12 m3 l3">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="../assets/images/cazafantasmas.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cards-movie">
-            <div class="">
-              <div class="col s12 m3 l3">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="../assets/images/dirtydance.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container-fluid">
-    <div class="row">
-      <div class="">
-
-        <div class="col m12">
-          <div class="cards-movie">
-            <div class="">
-              <div class="col s12 m3 l3">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="../assets/images/et.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cards-movie">
-            <div class="">
-              <div class="col s12 m3 l3">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="../assets/images/flashdance.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="cards-movie">
-            <div class="">
-              <div class="col s12 m3 l3">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="../assets/images/goonies.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="cards-movie">
-            <div class="">
-              <div class="col s12 m3 l3">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="../assets/images/grease.jpg">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="container-fluid">
-    <div class="row">
-      <div class="">
-
-        <div class="col m12">
-          <div class="btn-cards">
-            <p class="marathon">Tus marathones!</p>
-          </div>
-          <br>
-
           <div class="cards-movie">
             <div class="">
               <div class="col s12 m3 l3">
@@ -224,7 +113,6 @@
               </div>
             </div>
           </div>
-
           <div class="cards-movie">
             <div class="">
               <div class="col s12 m3 l3">
@@ -242,7 +130,6 @@
               </div>
             </div>
           </div>
-
           <div class="cards-movie">
             <div class="">
               <div class="col s12 m3 l3">
@@ -281,53 +168,31 @@
       </div>
     </div>
   </section>
-
-  <!-- area de prueba de nelida -->
-  <section class="home">
-    <div class="container">
-      <div class="row">
-        <h3 class="center-align">Search For Any Movie</h3>
-        <form id="searchForm">
-          <input type="text" id="searchText" placeholder="Search Movies...">
-        </form>
-      </div>
-<<<<<<< HEAD
+  <!-- Modal Structure Register-->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4>
+      <p></p>
     </div>
-    <div class="container">
-      <div id="movies" class="row"></div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
-  </section>
+  </div>
+  <!-- Modal Structure Login-->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Register</h4>
+      <p></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
   <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
   <script type="text/javascript" src="../js/home.js"></script>
   <script type="text/javascript" src="../js/slider.js"></script>
-
 </body>
-
 </html>
-=======
-    </section>
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-      <div class="modal-content">
-        <h4 id="text"></h4>
-        <p id="genre"></p>
-        <p id="time"></p>
-        <p id="actors"></p>
-        <p id="raiting"></p>
-        <p id="sinopsis"></p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-      </div>
-    </div>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
-    <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../js/home.js"></script>
-  </body>
-</html>
->>>>>>> c6bc2b5f2fb874801a5ee04d604b1efdb5736fd9

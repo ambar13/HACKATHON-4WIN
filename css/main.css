@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+  background:#7FADAD;
+}
 
 .fond {
   background-image: url('../assets/cc3.jpg');
@@ -5,8 +9,6 @@
   background-size: cover;
   padding-bottom: 20px;
   position: relative;
-
-  
 }
 
 .fond row {
@@ -15,14 +17,61 @@
   bottom: 25px;
 }
 
-/* carrusel */
-* {
-  box-sizing: border-box;
+/* Estilos del header */
+header {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
 }
 
-body {
-  min-height: 100vh;
-  background: #EFC076;
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+h4 {
+  font-family: 'Shrikhand', cursive;
+}
+
+.logo-box {
+  background-color: #4A4A4A;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 2px dotted white;
+  margin-top: 16px;
+}
+
+.box-search {
+  background-color: #4A4A4A;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos de linea separadora */
+.line {
+  margin-top: 5px;
+  border: 1px solid white;
+}
+
+/* Estilos del slider */
+.container-slider {
+  padding-bottom: 30px;
+  border-bottom: 1px dotted white;
 }
 
 .contenedor-slider {
@@ -31,11 +80,10 @@ body {
   max-width: 100%;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 0 10px #fff,
- 0 15px 50px;
+  box-shadow: 0 0 0 10px #fff, 0 15px 50px;
 }
 
-.slider {
+.slider-content {
   display: flex;
   width: 400%;
 }
@@ -79,11 +127,10 @@ body {
 }
 
 .box-slider{
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
-/* imagenes */
-
+/* Estilos de las imagenes*/
 .card-image{
   border: 2px solid rgb(104, 129, 213);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -104,3 +151,132 @@ p{
 .bold {
   font-weight: 800;
 }
+
+
+/* Estilos imagenes home */
+
+.title-top {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip1113 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.snip1113 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+figure.snip1113 img {
+  max-width: 65%;
+  margin: 40px auto;
+  display: block;
+  position: relative;
+  border: 3px solid #666666;
+  padding: 15px 15px 85px 15px;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+figure.snip1113 figcaption {
+  position: absolute;
+  height: 120px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: block;
+}
+
+figure.snip1113 h3 {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.7em;
+  width: 100%;
+  padding: 5px 12px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+figure.snip1113 h3 span {
+  font-weight: 800;
+}
+
+figure.snip1113 h4 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  opacity: 0.6;
+  font-size: 1.1em;
+}
+
+figure.snip1113.blue img {
+  border-color: #2472a4;
+}
+
+figure.snip1113.blue h3,
+figure.snip1113.blue h4 {
+  color: #2472a4;
+}
+
+figure.snip1113.red img {
+  border-color: #ab3326;
+}
+
+figure.snip1113.red h3,
+figure.snip1113.red h4 {
+  color: #ab3326;
+}
+
+figure.snip1113.yellow img {
+  border-color: #e08e0b;
+}
+
+figure.snip1113.yellow h3,
+figure.snip1113.yellow h4 {
+  color: #e08e0b;
+}
+
+figure.snip1113.green img {
+  border-color: #229955;
+}
+
+figure.snip1113.green h3,
+figure.snip1113.green h4 {
+  color: #229955;
+}
+
+figure.snip1113.orange img {
+  border-color: #d67118;
+}
+
+figure.snip1113.orange h3,
+figure.snip1113.orange h4 {
+  color: #d67118;
+}
+
+figure.snip1113.navy img {
+  border-color: #2b3c4e;
+}
+
+figure.snip1113.navy h3,
+figure.snip1113.navy h4 {
+  color: #2b3c4e;
+}
+

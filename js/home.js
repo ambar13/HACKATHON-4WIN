@@ -57,7 +57,6 @@ $(document).ready(function() {
                   $('#genre').text('Genero:' + genero);
                   $('#time').text('Duración:' + time);
                   $('#actors').text('Actores:' + actors);
-                  $('#raiting').text('Puntuación:' + raiting);
                   $('#sinopsis').text('Sinopsis:' + sinopsis);
                 });
               }
