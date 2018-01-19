@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Enlace Icono de Pestaña-->
-    <link rel="icon" href="../assets/images/bebe.ico">
+    <link rel="icon" href="">
     <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../assets/plugins/faceMocion.css" rel="stylesheet" type="text/css"/>
     <!-- Enlace a hoja de estilo externa -->
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Pataditas</title>
+    <link rel="stylesheet" href="../css/chat.css">
+    <title>Flashback</title>
   </head>
   <body>
     <header>
@@ -38,49 +38,7 @@
         </div>
       </nav>
     </header>
-    <section>
-      <div class="box-chat">
-        <div class="container">
-          <div class="row">
-            <!-- inicio de la caja de chat con bootstrap -->
-            <div class="col s12">
-              <div class="panel panel-primary">
-                <div class="panel-body">
-                  <ul class="chat-bd"> </ul>
-                </div>
-                <div class="panel-footer">
-                  <div class="input-group">
-                    <input id="mensaje" type="text" class="form-control input-sm" placeholder="Escribe un mensaje..."/>
-                    <span class="input-group-btn">
-                      <button class="btn btn-warning btn-sm" id="btnEnviar">Enviar</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--  Fin de la caja de chat -->
-          </div>
-        </div>
-        <!-- template del item del chat (Oculto: para agarrar un clon y llenarlo e insertar en el chat)-->
-        <li style="display:none" id="plantilla">
-          <span class="chat-img">
-            <img src="http://placehold.it/50/55C1E7/fff&text=U"/>
-          </span>
-          <div class="chat-body">
-            <div class="header">
-              <strong class="primary-font nombre">Jack Sparrow</strong>
-              <small><span class="glyphicon glyphicon-asterisk tiempo"></span></small>
-            </div>
-            <p class="mensaje">Mensaje</p>
-          </div>
-        </li>
-      </div>
-    </section>
-    <section class="hospital">
     <section class="chat">
-      <div class="chat-block">
-        <div class="title">Chat en Linea</div>
-      </div>
       <div class="box-chat">
         <div class="container">
           <div class="row">
@@ -105,17 +63,22 @@
         </div>
         <!-- template del item del chat (Oculto: para agarrar un clon y llenarlo e insertar en el chat)-->
         <li style="display:none" id="plantilla">
-          <span class="chat-img">
-            <img src="http://placehold.it/50/55C1E7/fff&text=U"/>
-          </span>
-          <div class="chat-body">
-            <div class="header">
-              <strong class="primary-font nombre">Jack Sparrow</strong>
-              <small><span class="glyphicon glyphicon-asterisk tiempo"></span></small>
+            <span class="chat-img">
+              <img src="http://placehold.it/50/55C1E7/fff&text=U"/>
+            </span>
+            <div class="chat-body">
+              <div class="header">
+                <strong class="primary-font nombre">Jack Sparrow</strong>
+                <small><span class="glyphicon glyphicon-asterisk tiempo"></span></small>
+              </div>
+              <p class="mensaje">Mensaje</p>
             </div>
-            <p class="mensaje">Mensaje</p>
-          </div>
-        </li>
+          </li>
       </div>
     </section>
-    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/chat.js"></script>
+  </body>
+</html>
