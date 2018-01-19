@@ -177,7 +177,7 @@ var data = [
     'cadenaoriginal': 'Redifusion',
     'booleano': 'true',
     'sinapsis': 'Thundercats (estilizado como ThunderCats, conocida en España e Hispanoamérica como ThunderCats: Los felinos cósmicos) es una serie animada estadounidense de televisión que fue producida por Rankin/Bass Productions misma que creó a los Halcones Galácticos, Los Tigres del Mar, esta última fue creada como parte de la serie de libros de historietas.',
-    'video': 'https://www.youtube.com/watch?v=5sYC--2CEhk',
+    'video': 'https://www.youtube.com/embed/5sYC--2CEhk',
     'imagen':
     'http://news.thundercats.ws/wp-content/uploads/sites/6/2011/03/Thundercats-Wallpaper-1-HD_1299385920.jpg'
   },
@@ -193,7 +193,7 @@ var data = [
     'cadenaoriginal': 'Toei Animation',
     'booleano': 'true',
     'sinapsis': 'Pretty Soldier Sailor Moon (Bishōjo Senshi Sērā Mūn?), mejor conocida como Sailor Moon, es una serie de manga escrita e ilustrada por Naoko Takeuchi en 1992. El manga se hizo particularmente famoso por volver a popularizar con gran éxito el subgénero de las magical girls,4​ y sus elementos sentai consiguieron que la aceptación también fuese masiva entre el sector masculino, generalmente menos interesado en este tipo de historias.',
-    'video': 'https://www.youtube.com/watch?v=JWKBwFOVvpw',
+    'video': 'https://www.youtube.com/embed/JWKBwFOVvpw',
     'imagen':
     'https://dw9to29mmj727.cloudfront.net/promo/2016/5257-SeriesHeaders_SMv3_2000x800.jpg'
   },
@@ -209,7 +209,7 @@ var data = [
     'cadenaoriginal': 'Fuji Television',
     'booleano': 'true',
     'sinapsis': 'Marco (Haha wo tazunete sanzenri?) conocida como Tres mil leguas en busca de mamá, o también como De los Apeninos a los Andes, es una serie de anime japonesa basada en el relato Marco, de los Apeninos a los Andes incluido en la novela italiana Corazón de Edmondo de Amicis.',
-    'video': 'https://www.youtube.com/watch?v=OPsQQFakmmA',
+    'video': 'https://www.youtube.com/embed/OPsQQFakmmA',
     'imagen':
     'https://i2.wp.com/freakelitex.com/wp-content/uploads/2016/11/Marco.jpg?resize=590%2C434'
   },
@@ -225,7 +225,7 @@ var data = [
     'cadenaoriginal': 'TV Tokyo',
     'booleano': 'true',
     'sinapsis': 'Captain Tsubasa (Kyaputen Tsubasa?) (literalmente en español Tsubasa 翼 - Alas), es un manga creado en 1981 por el historietista japonés Yōichi Takahashi. El anime de la serie fue conocido en Hispanoamérica como Super campeones y en España como Campeones: Oliver y Benji.',
-    'video': 'https://www.youtube.com/watch?v=jOppIgxfOw0',
+    'video': 'https://www.youtube.com/embed/jOppIgxfOw0',
     'imagen':
     'http://i.espectaculos.televisa.com/2017/12/super-campeones.jpg'
   },
@@ -241,7 +241,7 @@ var data = [
     'cadenaoriginal': 'NBC',
     'booleano': 'true',
     'sinapsis': 'La historia gira en torno a V.I.C.I. (Voice Input Child Identicant) interpretado por Tiffany Brissette, un androide con forma de niña de 10 años creado como un proyecto personal y en absoluto secreto por Ted Lawson (Dick Christie), quien trabaja para la empresa cibernética United Robotronics.',
-    'video': 'https://www.youtube.com/watch?v=VzAwJe_dsS0',
+    'video': 'https://www.youtube.com/embed/VzAwJe_dsS0',
     'imagen':
     'http://i2.mirror.co.uk/incoming/article10421869.ece/ALTERNATES/s615b/PROD-BAYWATCH.jpg'
   },
@@ -257,7 +257,7 @@ var data = [
     'cadenaoriginal': 'Redifusion',
     'booleano': 'true',
     'sinapsis': 'He-Man and The Masters of The Universe, conocida como He-Man y los Amos del Universo en Latinoamérica y en España, es una serie de televisión animada estadounidense producida por Filmation basado en línea de juguetes de Mattel Masters of The Universe.',
-    'video': 'https://www.youtube.com/watch?v=ymwNiut3Yxwc',
+    'video': 'https://www.youtube.com/embed/ymwNiut3Yxw',
     'imagen':
     'https://i.kinja-img.com/gawker-media/image/upload/s--FQm_C0YB--/c_scale,fl_progressive,q_80,w_800/hx6qx4ido3sic06fffvw.jpg'
   }
