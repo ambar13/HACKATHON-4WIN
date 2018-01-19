@@ -130,7 +130,7 @@ function facebooklog(event) {
       }
     }).catch(function(error) {
       console.log(error);
-    })
+    });
 }
 
 var $logout = $('#logout');
@@ -142,7 +142,7 @@ function logOut() {
     window.location.href = '../index.html';
   }).catch(function(error) {
     console.log(error);
-  })
+  });
 }
 
 var $btnLogin = $('#btnLogin');
@@ -153,7 +153,7 @@ var $password = $('#password');
 
 // login
 
-$btnLogin.on('click', function(e) {
+$btnLogin.on('click', function(event) {
   var email = $email.val();
   var password = $password.val();
   var promise = firebase.auth().signInWithEmailAndPassword(email, password);
@@ -165,14 +165,14 @@ $btnLogin.on('click', function(e) {
       }
       console.log(user);
     })
-    .catch(function(e) {
-      console.log(e.message);
-    })
-})
+    .catch(function(event) {
+      console.log(event.message);
+    });
+});
 
 // signup
 
-$btnSignup.on('click', function(e) {
+$btnSignup.on('click', function(event) {
   var email = $email.val();
   var password = $password.val();
   var promise = firebase.auth().createUserWithEmailAndPassword(email, password);
@@ -180,9 +180,9 @@ $btnSignup.on('click', function(e) {
     .then(function(user) {
       console.log(user);
     })
-    .catch(function(e) {
-      console.log(e.message);
-    })
+    .catch(function(event) {
+      console.log(event.message);
+    });
 
   function writeUserData(userId, name, email, imageUrl) {
     firebase.database().ref('users/' + userId).set({

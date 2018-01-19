@@ -1,6 +1,6 @@
 (function() {
 //  console.log(data[1].imagen)
- totalSeries();
+  totalSeries();
 }());
 
 function totalSeries() {
@@ -11,11 +11,8 @@ function totalSeries() {
   }
 }
 
-$('.modal-box').on('click', function(event)
-{
-
+$('.modal-box').on('click', function(event) {
   for (var i = 0; i < data.length; i++) {
-
     if ($(this).data('titulo') === data[i].titulo) {
       $('.title').text(data[i].titulo + ' ' + data[i].año);
       $('.video').attr('src', data[i].video);
@@ -27,7 +24,6 @@ $('.modal-box').on('click', function(event)
       $('.writer').text(data[i].escritor);
       $('.original').text(data[i].cadenaoriginal);
       $('.synapse').text(data[i].sinapsis);
-
     }
   }
 });
