@@ -1,0 +1,106 @@
+/* Estilos del header */
+header {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+h4 {
+  font-family: 'Shrikhand', cursive;
+}
+
+.logo-box {
+  background-color: #4A4A4A;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-nav {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 2px dotted white;
+  margin-top: 16px;
+}
+
+.box-search {
+  background-color: #4A4A4A;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Estilos de vista chat */
+
+.chat-bd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-bd li {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat-bd li.left .chat-body {
+  margin-left: 60px;
+}
+
+.chat-bd li.right .chat-body {
+  margin-right: 60px;
+}
+
+
+.chat-bd li .chat-body p {
+  margin: 0;
+  color: #777777;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon {
+  margin-right: 5px;
+}
+
+.panel-body {
+  overflow-y: scroll;
+  height: 500px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+.redimensionar {
+  height: 200px;
+  width: 200px;
+}
+
+.flex-box  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

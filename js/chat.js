@@ -36,7 +36,7 @@ function begin() {
   });
 
   var tablaDeBaseDatos = firebase.database().ref('chat');
-  var nombre = prompt('Nombre:');
+  var nombre = prompt('Escribe tu Nick:');
   $('#btnEnviar'). click(function() {
     // alert('chat');
     var formatofecha = new Date();
