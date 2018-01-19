@@ -9,20 +9,25 @@
   <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/search.css">
   <title>Flashback</title>
 </head>
 <body>
-  <!-- search -->
-  <section class="home">
-    <div class="container">
-      <div class="row">
-        <h3 class="center-align">Search For Any Movie</h3>
-        <form id="searchForm">
-          <input type="text" id="searchText" placeholder="Search Movies...">
-        </form>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <form id="searchForm">
+              <i class="material-icons prefix">search</i>
+              <input type="text" id="searchText" placeholder="Buscar peliculas...">
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+  <section class="home">
     <div class="container">
       <div id="movies" class="row"></div>
     </div>
