@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../vendors/materialize/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Flashback</title>
+</head>
+<body>
+  <!-- search -->
+  <section class="home">
+    <div class="container">
+      <div class="row">
+        <h3 class="center-align">Search For Any Movie</h3>
+        <form id="searchForm">
+          <input type="text" id="searchText" placeholder="Search Movies...">
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div id="movies" class="row"></div>
+    </div>
+  </section>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 id="text"></h4>
+      <p id="genre"></p>
+      <p id="time"></p>
+      <p id="actors"></p>
+      <p id="raiting"></p>
+      <p id="sinopsis"></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script type="text/javascript" src="../vendors/materialize/js/materialize.min.js"></script>
+  <script type="text/javascript" src="../js/home.js"></script>
+</body>
+</html>
