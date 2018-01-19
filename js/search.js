@@ -40,9 +40,9 @@ $(document).ready(function() {
             .then(function(response) {
               if ((response.Year.indexOf('19') !== -1)) {
                 console.log(response);
-                var div = $('<div class="col s12 m4">');
+                var div = $('<div class="col s12 m4 center-align">');
                 var title = $('<h5 class="center-align">');
-                var img = $('<img class="responsive-img info modal-trigger" data-target="modal1" data-name="' + response.Title + '" data-year="' + response.Year + '" data-time="' + response.Runtime + '" data-genero="' + response.Genre + '" data-actors="' + response.Actors + '" data-sinopsis="' + response.Plot + '" src="' + response.Poster + '">');
+                var img = $('<img class="responsive-img info box-film modal-trigger" data-target="modal1" data-name="' + response.Title + '" data-year="' + response.Year + '" data-time="' + response.Runtime + '" data-genero="' + response.Genre + '" data-actors="' + response.Actors + '" data-sinopsis="' + response.Plot + '" src="' + response.Poster + '">');
                 div.append(img);
                 title.append(response.Title);
                 div.append(title);
