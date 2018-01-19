@@ -1,0 +1,72 @@
+body {
+ background-color: #D0DBE0;
+}
+
+.title {
+  background-color: #F2EBD2;
+  border: #E65A20 solid 0.1rem;
+  border-radius: 1rem;
+}
+
+.color1 {
+  height: 35vh;
+  background-color: #D0DBE0;
+}
+
+.shadow {
+  color: #E65A20;
+    padding-top: 1.5rem;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow: -3px -3px 0 #000000, 3px -3px 0 #000000, -3px 3px 0 #000000, 3px 3px 0 #000000, 5px 5px 0 #ffffff, 6px 6px 0 #ffffff, 7px 7px 0 #ffffff, 8px 8px 0 #ffffff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.1);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin: 0;
+  text-align: center;
+}
+
+.handwriting {
+  font-family: Pacifico;
+  color: #E65A20;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin: 0;
+}
+
+.handwriting span {
+  background-color: #F2EBD2;
+  padding: 0 0.5em;
+  position: relative;
+  bottom: 0.3rem;
+}
+
+.handwriting:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  width: 90%;
+  border-bottom: 2px solid #ffffff;
+}
+
+.article {
+  font-size: 2rem;
+}
+
+.noun {
+  font-size: 6rem;
+}
+
+.modal-box {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: #fffefe solid 0.7rem;
+  margin: 3rem;
+  box-sizing: border-box;
+}
