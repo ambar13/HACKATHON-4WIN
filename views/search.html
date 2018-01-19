@@ -13,6 +13,14 @@
   <title>Flashback</title>
 </head>
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.11&appId=173021276636444';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <header>
     <nav style="background-color:#82B0B0;">
       <div class="nav-wrapper box-nav">
@@ -56,6 +64,7 @@
       <div id="movies" class="row"></div>
     </div>
   </section>
+  <div class="fb-comments" data-href="https://nelidash.github.io/HACKATHON-4WIN/views/search.html" data-numposts="5"></div>
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
